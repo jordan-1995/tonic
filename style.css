@@ -1,0 +1,592 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    overflow-x: hidden;
+}
+
+.websiteHeader{
+    z-index: 999;
+    padding: 30px 133px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+    background-color: #00000033;
+}
+
+.navigationBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburgerIcon{
+    display: none;
+}
+
+.single-page a{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.section-1, .studioBanner{
+    z-index: 0;
+    margin-top: -10%;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text-container{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 6220px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: headingAnimate 15s linear infinite;
+}
+
+@keyframes headingAnimate {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.banner-text-container h2{
+    font-size: 420px;
+    color: #3532D1;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.section-2{
+    padding: 297px 133px;
+}
+.mobile-sec-2{
+    display: none;
+}
+.sec2-cont{
+    padding: 0 40px;
+}
+
+.sec2-cont h4{
+    height: 56px;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+p.sec2-para{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.section-3{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 133px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3-content h4{
+    padding-left: 80px;
+    padding-right: 50px;
+    color: #202020;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.sec3-content h4 span{
+    color: #3532D1;
+}
+
+.section-3 img{
+    opacity: 0.6;
+}
+
+.home-team{
+    margin-top: 150px;
+}
+
+.sec4-title h2{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* .mobile-carousel{
+    display: none;
+} */
+
+.team-single{
+    border-top: 0.25px solid white;
+    padding: 50px 153px;
+    display: flex;
+    border-bottom: 0.25px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-single:hover{
+    background: #3532D1;
+}
+
+.team-title{
+    width: 40%;
+}
+
+.team-para{
+    width: 40%;
+}
+
+.team-single h4{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.studio-single-img img{
+    width: 80%;
+}
+
+.team-single p{
+    margin-left: 50px;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.team-img{
+    width: 20%;
+    margin-left: 50px;
+}
+
+.testimonial{
+    margin-top: 15%;
+}
+
+.testimonial-title{
+    width: 1894px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: testimonialHeading 15s linear infinite;
+}
+
+@keyframes testimonialHeading {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.testimonial-content{
+    display: block;
+    /* white-space: nowrap; */
+    animation: testimonialContent 15s linear infinite;
+}
+
+@keyframes testimonialContent {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.testimonial-title h2{
+    font-size: 150px;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.testimonial-content{
+    margin-top: 100px;
+    display: flex;
+}
+
+.single-testimonial{
+    margin-left: 20px;
+    border: 0.25px solid #fff;
+    width: 28%;
+    padding: 30px 20px;
+}
+
+.single-testimonial:hover{
+    background: #3532D1;
+}
+
+.single-testimonial p{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.testimonial-inner-cont{
+    display: flex;
+}
+
+.testimonial-name{
+    width: 60%;
+    padding: 0 10px;
+}
+
+.testimonial-name h4{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.testimonial-name p{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+footer{
+    margin-top: 200px;
+    background: #3532D1;
+    padding: 70px 133px 50px 133px;
+}
+
+.footer-title h2{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.footer-middle{
+    margin-top: 100px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.quick-links{
+    display: flex;
+}
+
+.single-qlink{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+
+.single-qlink a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-social-media{
+    display: flex;
+}
+
+.single-smedia{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+
+.footer-copyright{
+    margin-top: 70px;
+}
+
+.footer-copyright p{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+
+/* studio style start */
+
+.studioSection{
+    margin-top: 15%;
+}
+
+.studio-singles{
+    padding-bottom: 10%;
+    display: flex;
+    padding-left: 133px;
+    padding-right: 15px;
+}
+
+.studioContent{
+    width: 32%;
+    padding: 5% 5% 5% 0;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.studio-title{
+    margin-bottom: 50%;
+}
+
+.studio-title h2, .studios-title h2{
+    color:#3532D1;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.studioMemContent p{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10%;
+}
+
+.exploreButton{
+    margin-top: 15%;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.studioImage{
+    width: 68%;
+}
+
+.studioImage img{
+    width: 100%;
+}
+
+/* studio style end */
+
+/* team style start */
+
+.profileSection{
+    display: block;
+    padding: 0 133px;
+}
+
+.individual-team-member{
+    /* display: flex; */
+    padding-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-photo{
+    width: 100%;
+    margin-left: 45%;
+}
+
+.teamPhoto{
+    width: 55%;
+}
+
+.teamPhoto img{
+    width: 100%;
+}
+
+.teamContent{
+    width: 45%;
+    padding: 0% 5%;
+}
+
+.teamName h2{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.teamContentPara p{
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.teamExplore{
+    margin-top: 5%;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+/* team style end */
+
+/* contact form css start*/
+.section-form{
+    margin-top: 20%;
+    padding: 0 10%;
+}
+
+h3.form-heading{
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 45px;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    width: 297px;
+}
+
+.form-text{
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 25px;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.form-control, .form-control:focus{
+    background-color: #000000;
+    border-width: 0 0 0.5px 0;
+    border-color: #686666;
+}
+
+.submitBtn{
+    font-size: 20px;
+    color: #3532D1;
+    line-height: 25px;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    padding: 13px 45px;
+    border-radius: 25px;
+    border: 1px solid #D9D9D9;
+    background-color: transparent;
+}
+
+::placeholder{
+    font-size: 15px;
+    color: #6C6B6B;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: 'Space Grotesk', sans-serif;
+}
+/* contact form css end */
+
+/* CSS for responsive design */
+@media only screen and (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+    }
+      body {
+        position: relative;
+    }
+
+    .websiteHeader{
+        display: flex;
+        padding: 10px 20px;
+    }
+    .logo img{
+        width: 63px;
+    }
+    .navigationBar{
+        display: none;
+    }
+    .hamburgerIcon{
+        display: block;
+    }
+    .hamburgerIcon img{
+        margin-top: 7px;
+        width: 31px;
+        height: 31px;
+    }
+
+    .section-1, .studioBanner{
+        z-index: 0;
+        margin-top: -65px;
+    }
+
+    .banner-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .banner-heading{
+        font-size: 420px;
+        color: #3532D1;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    footer{
+        background: none;
+        padding: 0 10%;
+        margin-top: 20px;
+    }
+    .footer-middle{
+        display: block;
+        margin-top: 50px;
+    }
+    .quick-links{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .single-qlink{
+        width: 40%;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+    .footer-social-media {
+        display: block;
+        margin-top: 50px;
+    }
+    .footer-copyright{
+        margin: 50px 0;
+    }
+}

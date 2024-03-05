@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.divider-line {
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    animation: expandLine 1s forwards;
+}
+
+@keyframes expandLine {
+    from {
+        width: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        width: 80%;
+        transform: translateX(-50%);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="divider-line"></div>
+</body>
+</html>
